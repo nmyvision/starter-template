@@ -14,8 +14,18 @@ module.exports = {
   ],
   // required to lint *.vue files
   plugins: [
-    'vue'
+    'vue', 'prettier'
   ],
   // add your custom rules here
-  rules: {}
+  rules: {
+    "prettier/prettier": [
+      "error",
+      {
+        semi: false,
+        printWidth: 120
+      }
+    ],
+    "vue/require-default-prop": "off",
+    "vue/max-attributes-per-line": "off"
+  }
 }
