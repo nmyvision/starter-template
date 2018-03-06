@@ -20,7 +20,7 @@ module.exports = {
       'type': 'string',
       'message': 'Author'
     },
-    description: {
+    port: {
       'type': 'number',
       'required': false,
       'message': 'Port #',
